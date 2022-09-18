@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "343752290812",
+    "project_id": "energy-app-37fd0",
+    "storage_bucket": "energy-app-37fd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343752290812:android:a7f993e8d87098119a8279",
+        "android_client_info": {
+          "package_name": "com.energyapp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343752290812-3letusu5k1cklh5omki05mlp20slhd6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6oRnbvNsvlygCBmdSDZWtIQvZn7kUQcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343752290812-3letusu5k1cklh5omki05mlp20slhd6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
