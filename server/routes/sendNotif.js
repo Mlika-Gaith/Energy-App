@@ -27,14 +27,12 @@ async function sendNotifications(title, body) {
   }
 }
 schedule.scheduleJob('*/5 * * * *', function () {
-  //console.log('The answer to life, the universe, and everything!');
   sendNotifications(
     'Time To Check On Your Electricity Meters',
     'Keep Track Of Your Hourly Energy Consumption For Better Energy Savings.',
   );
 });
 schedule.scheduleJob('*/5 * * * *', async function () {
-  //console.log('The answer to life, the universe, and everything!');
   let daySum = 0;
   let yesterdaySum = 0;
   let dailyDiffPrct = 0;

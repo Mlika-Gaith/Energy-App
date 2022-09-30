@@ -108,21 +108,30 @@ const Home = ({getMeasures, measures}) => {
     // DAY VALUES MANIP
 
     for (const element of measures) {
-      let day = moment(element.createdAt).format('MM-DD');
-      let today = moment().format('MM-DD');
-      if (moment(day).isSame(today)) {
+      if (
+        moment(element.createdAt).isAfter(moment().startOf('day')) &&
+        moment(element.createdAt).isBefore(moment().endOf('day'))
+      ) {
         daySum += element.real_value;
       }
     }
 
     for (const element of measures) {
-      let day = moment(element.createdAt).format('MM-DD');
-      let yesterday = moment().subtract(1, 'days').format('MM-DD');
-      if (moment(day).isSame(yesterday)) {
+      if (
+        moment(element.createdAt).isAfter(
+          moment().subtract(1, 'days').startOf('day'),
+        ) &&
+        moment(element.createdAt).isBefore(
+          moment().subtract(1, 'days').endOf('day'),
+        )
+      ) {
         yesterdaySum += element.real_value;
       }
     }
-    dailyDiffPrct = (((daySum - yesterdaySum) / yesterdaySum) * 100).toFixed(2);
+    dailyDiffPrct =
+      yesterdaySum != 0
+        ? (((daySum - yesterdaySum) / yesterdaySum) * 100).toFixed(2)
+        : NaN;
     dailyPrctColor =
       dailyDiffPrct == 0
         ? COLORS.lightGray3

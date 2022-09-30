@@ -116,17 +116,17 @@ const Report = ({
       : 0;
 
   // VARIABLES
-  let cont_dates = ['none', 'none'];
-  let cont_counts = [0, 0];
-  let monthly_coasts = [0, 0];
-  let energy_per_months = [0, 0];
-  let months = ['none', 'none'];
-  var energy_per_days = [0, 0];
-  var days = ['none', 'none'];
-  var energy_per_days_week = [0, 0];
-  var week_days = ['none', 'none'];
-  var energy_per_hours_day = [0, 0];
-  var day_hours = ['none', 'none'];
+  let cont_dates = ['none', 'none', 'none', 'none', 'none'];
+  let cont_counts = [0, 0, 0, 0, 0];
+  let monthly_coasts = [0, 0, 0, 0, 0];
+  let energy_per_months = [0, 0, 0, 0, 0];
+  let months = ['none', 'none', 'none', 'none', 'none'];
+  var energy_per_days = [0, 0, 0, 0, 0];
+  var days = ['none', 'none', 'none', 'none', 'none'];
+  var energy_per_days_week = [0, 0, 0, 0, 0];
+  var week_days = ['none', 'none', 'none', 'none', 'none'];
+  var energy_per_hours_day = [0, 0, 0, 0, 0];
+  var day_hours = ['none', 'none', 'none', 'none', 'none'];
 
   if (typeof measures[0] != 'undefined' && typeof coasts != 'undefined') {
     // GETTING ENERGY VALUES PER MONTHS FOR CHART

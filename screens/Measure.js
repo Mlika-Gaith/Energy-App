@@ -1,6 +1,6 @@
 /* eslint-disable eslint-comments/no-unused-disable */
 /* eslint-disable react-native/no-inline-styles */
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 import {COLORS, FONTS, icons, SIZES} from '../constants';
 import {IconTextButton} from '../components';
@@ -9,9 +9,8 @@ import SmoothPicker from 'react-native-smooth-picker';
 import axios from 'axios';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import {ShowModal} from '../functions/Modal';
-import FormData from 'form-data';
-import MlkitOcr from 'react-native-mlkit-ocr';
 import showToast from '../functions/Toast';
+import MlkitOcr from 'react-native-mlkit-ocr';
 
 const RenderPicker = ({children, selected, horizontal}) => {
   return (
@@ -70,7 +69,7 @@ const Measure = ({route, navigation}) => {
   const [textForModal, setTextForModal] = React.useState('');
   const [pictureValue, setPicureValue] = React.useState(0);
   const {item} = route.params;
-  async function takePicture() {
+  const takePicture = async () => {
     let measure = null;
     let image = null;
     try {
@@ -104,7 +103,7 @@ const Measure = ({route, navigation}) => {
         }
       }
     }
-  }
+  };
   async function imageFromLibrary() {
     let measure = null;
     let image = null;
