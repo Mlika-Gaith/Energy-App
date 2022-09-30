@@ -1,4 +1,4 @@
-import * as meterActions from "./meterActions";
+import * as meterActions from './meterActions';
 const initialState = {
   myMeters: [],
   error: null,
@@ -8,7 +8,7 @@ const initialState = {
 const meterReducer = (state = initialState, action) => {
   switch (action.type) {
     case meterActions.GET_METERS_BEGIN:
-      return { ...state, loading: true };
+      return {...state, loading: true};
     case meterActions.GET_METERS_SUCCESS:
       return {
         ...state,
