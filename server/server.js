@@ -14,7 +14,7 @@ dotenv.config();
 app.use(express.json());
 mongoose
   .connect(
-    'mongodb+srv://ghaith:gaithgaith1997@cluster0.hk1ro.mongodb.net/react_native?retryWrites=true&w=majority',
+    'MONGO_DATABASE_LINK',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
