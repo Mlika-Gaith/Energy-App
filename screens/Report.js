@@ -337,7 +337,7 @@ const Report = ({
             />
           }
         </ScrollView>
-        <RenderBarChartHeader title={'Energy Coasts of current Year'} />
+        <RenderBarChartHeader title={'Energy Costs of current Year'} />
         <ScrollView
           horizontal={true}
           style={{marginTop: SIZES.padding, paddingHorizontal: SIZES.padding}}

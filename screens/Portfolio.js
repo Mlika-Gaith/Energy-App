@@ -123,10 +123,10 @@ const Portfolio = ({getCoasts, myCoasts}) => {
           backgroundColor: COLORS.gray,
         }}>
         <Text style={{marginTop: 50, color: COLORS.white, ...FONTS.largeTitle}}>
-          Your Coasts
+          Your Costs
         </Text>
         <BalanceInfo
-          title="Estimated Energy Coasts"
+          title="Estimated Energy Costs"
           displayAmount={coastsSum.toFixed(3)}
           changePct={prct}
           time={'As of ' + time}
@@ -161,7 +161,7 @@ const Portfolio = ({getCoasts, myCoasts}) => {
             paddingHorizontal: SIZES.padding,
           }}>
           <Text style={{color: COLORS.white, ...FONTS.h3, fontSize: 18}}>
-            Coasts of your Consumption
+            Coats of your Consumption
           </Text>
           <Stat
             title="This Month"
