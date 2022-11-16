@@ -36,7 +36,7 @@ export function getMeasures() {
         }
       })
       .catch(error => {
-        //console.log(error);
+        console.log('Error :', error);
         dispatch(getMeasureFailure(error));
       });
   };

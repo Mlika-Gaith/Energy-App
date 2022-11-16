@@ -20,11 +20,10 @@
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.5",
     "axios": "^0.27.2",
-    "form-data": "^4.0.0",
     "moment": "^2.29.4",
     "patch-package": "^6.4.7",
     "react": "17.0.2",
-    "react-native": "0.68.2",
+    "react-native": "0.68.5",
     "react-native-chart-kit": "^6.12.0",
     "react-native-dropdown-picker": "^5.4.2",
     "react-native-dynamically-selected-picker": "^2.0.1",
@@ -43,12 +42,10 @@
     "react-native-status-bar-height": "^2.6.0",
     "react-native-svg": "^12.3.0",
     "react-native-table-component": "^1.2.2",
-    "react-native-text-recognition": "^1.0.0",
     "react-native-wagmi-charts": "^2.1.0",
     "react-redux": "^8.0.2",
     "redux": "^4.2.0",
-    "redux-thunk": "^2.4.1",
-    "rn-fetch-blob": "^0.12.0"
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -1,36 +1,36 @@
-import axios from "axios";
+import axios from 'axios';
 
-export const GET_METERS_BEGIN = "GET_METERS_BEGIN";
-export const GET_METERS_SUCCESS = "GET_METERS_SUCCESS";
-export const GET_METERS_FAILURE = "GET_METERS_FAILURE";
+export const GET_METERS_BEGIN = 'GET_METERS_BEGIN';
+export const GET_METERS_SUCCESS = 'GET_METERS_SUCCESS';
+export const GET_METERS_FAILURE = 'GET_METERS_FAILURE';
 
 export const getMetersBegin = () => ({
   type: GET_METERS_BEGIN,
 });
 
-export const getMetersSuccess = (myMeters) => ({
+export const getMetersSuccess = myMeters => ({
   type: GET_METERS_SUCCESS,
-  payload: { myMeters },
+  payload: {myMeters},
 });
 
-export const getMetersFailure = (error) => ({
+export const getMetersFailure = error => ({
   type: GET_METERS_FAILURE,
-  payload: { error },
+  payload: {error},
 });
 
 export function getMeters() {
-  return async (dispatch) => {
+  return async dispatch => {
     dispatch(getMetersBegin());
-    let apiUrl = "http://192.168.1.13:8082/meters/";
+    let apiUrl = 'http://192.168.1.13:8082/meters/';
     return await axios({
       url: apiUrl,
-      method: "GET",
+      method: 'GET',
       header: {
-        Accept: "application/json",
+        Accept: 'application/json',
       },
     })
-      .then((response) => {
-        //console.log(response);
+      .then(response => {
+        //console.log(response.data);
         if (response.status == 200) {
           let myMeters = response.data;
           dispatch(getMetersSuccess(myMeters));
@@ -38,7 +38,7 @@ export function getMeters() {
           dispatch(getMetersFailure(response.data));
         }
       })
-      .catch((error) => {
+      .catch(error => {
         dispatch(getMetersFailure(error));
       });
   };

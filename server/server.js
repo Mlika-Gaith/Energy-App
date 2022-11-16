@@ -5,7 +5,6 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const path = require('path');
 var multer = require('multer');
-const PORT = 8082;
 
 // protect from cross origin error
 app.use(cors());
@@ -13,17 +12,12 @@ dotenv.config();
 // * using json
 app.use(express.json());
 mongoose
-  .connect(
-    'MONGO_DATABASE_LINK',
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    },
-  )
+  .connect(process.env.MONGO_DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(console.log('connected to db'))
   .catch(err => console.log(err));
-
-//recognize text
 
 // uploaded images
 app.use('/images', express.static(path.join(__dirname, '/images')));
@@ -56,4 +50,4 @@ app.use('/coasts', coastRoute);
 app.use('/tokens', tokenRoute);
 
 // * starting server
-app.listen(PORT, () => console.log('server running'));
+app.listen(process.env.PORT, () => console.log('server running'));

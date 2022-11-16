@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 // * timestamps adds default fields created at and updated at
 const MeasureSchema = new mongoose.Schema(
   {
@@ -18,7 +18,7 @@ const MeasureSchema = new mongoose.Schema(
       unique: false,
     },
   },
-  { timestamps: true }
+  {timestamps: true},
 );
 // * export your DB schema
-module.exports = mongoose.model("Measure", MeasureSchema);
+module.exports = mongoose.model('Measure', MeasureSchema);

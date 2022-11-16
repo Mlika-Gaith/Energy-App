@@ -46,6 +46,7 @@ router.post('/measure', async (req, res) => {
 router.get('/getmeasures', async (req, res) => {
   try {
     const measure = await Measure.find();
+    console.log(measure);
     res.status(200).json(measure);
   } catch (err) {
     res.status(500).json(err);

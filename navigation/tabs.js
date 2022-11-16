@@ -3,7 +3,7 @@ import {TouchableOpacity} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {connect} from 'react-redux';
 import {setTradeModalVisibility} from '../stores/tab/TabActions';
-import {Home, Portfolio, Market, Profile} from '../screens';
+import {Home, Portfolio, Monitor, Profile} from '../screens';
 import {COLORS, icons} from '../constants';
 import {TabIcon} from '../components';
 
@@ -100,8 +100,8 @@ const Tabs = ({setTradeModalVisibility, isTradeModalVisible}) => {
         }}
       />
       <Tab.Screen
-        name="Market"
-        component={Market}
+        name="Monitor"
+        component={Monitor}
         options={{
           tabBarIcon: ({focused}) => {
             if (!isTradeModalVisible) {

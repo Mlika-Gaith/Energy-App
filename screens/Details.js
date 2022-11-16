@@ -114,7 +114,7 @@ const DetailsHeader = ({
         setModalVisible={setModalVisible}
         title="Do you want to delete this Monitor ?"
         text={textForModal}
-        onPress={() => deleteMeter() && navigate.navigate('Market')}
+        onPress={() => deleteMeter() && navigate.navigate('Monitor')}
       />
     </View>
   );
