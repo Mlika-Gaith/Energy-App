@@ -1,7 +1,7 @@
 <h1 align="center"> Energy App </h1> <br>
 <p align="center">
   <a href="https://gitpoint.co/">
-    <img alt="GitPoint" title="GitPoint" src="./screenshots/app_logo.jpg" width="250">
+    <img alt="GitPoint" title="GitPoint" src="./screenshots/app_logo.jpg" width="150">
   </a>
 </p>
 <p align="center">
@@ -23,8 +23,8 @@ Track your electric energy consumption and estimate its costs.Built with React N
 **Available for both iOS and Android.**
 
 <p align="center">
-  <img src = "./screenshots/screenshot12.jpg" width=350>
-  <img src = "./screenshots/screenshot1.jpg" width=350>
+  <img src = "./screenshots/screenshot12.jpg" width=250>
+  <img src = "./screenshots/screenshot1.jpg" width=250>
 </p>
 
 ## Features
@@ -41,14 +41,14 @@ A few of the things you can do with GitPoint:
 - Better understanding of your energy consumptions and its costs.
 
 <p align="center">
-  <img src = "./screenshots/screenshot3.jpg" width=350>
-  <img src = "./screenshots/screenshot4.jpg" width=350>
-  <img src = "./screenshots/screenshot5.jpg" width=350>
+  <img src = "./screenshots/screenshot3.jpg" width=250>
+  <img src = "./screenshots/screenshot4.jpg" width=250>
+  <img src = "./screenshots/screenshot5.jpg" width=250>
 </p>
 <p align="center">
-  <img src = "./screenshots/screenshot6.jpg" width=350>
-  <img src = "./screenshots/screenshot7.jpg" width=350>
-  <img src = "./screenshots/screenshot8.jpg" width=350>
+  <img src = "./screenshots/screenshot6.jpg" width=250>
+  <img src = "./screenshots/screenshot7.jpg" width=250>
+  <img src = "./screenshots/screenshot8.jpg" width=250>
 </p>
 
 ## Build Process
