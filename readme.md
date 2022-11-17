@@ -1,6 +1,6 @@
 <h1 align="center"> Energy App </h1> <br>
 <p align="center">
-  <a href="https://gitpoint.co/">
+  <a href="https://github.com/Mlika-Gaith/Energy-App-2">
     <img alt="GitPoint" title="GitPoint" src="./screenshots/app_logo.jpg" width="150">
   </a>
 </p>
@@ -23,7 +23,7 @@ Track your electric energy consumption and estimate its costs.Built with React N
 **Available for both iOS and Android.**
 
 <p align="center">
-  <img src = "./screenshots/screenshot12.jpg" width=250>
+  <img src = "./screenshots/screenshot2.jpg" width=250>
   <img src = "./screenshots/screenshot1.jpg" width=250>
 </p>
 
