@@ -54,7 +54,7 @@ async function submit(value, item) {
   let measure = {value: value, meterID: item.ID, real_value: value};
   try {
     let response = await axios.post(
-      'http://192.168.1.13:8082/measures/measure',
+      'http://p-address:8082/measures/measure',
       measure,
     );
     showToast('measure added successfully.');

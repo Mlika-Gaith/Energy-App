@@ -18,7 +18,7 @@ export const getMeasureFailure = error => ({
 export function getMeasures() {
   return async dispatch => {
     dispatch(getMeasureBegin());
-    let apiUrl = 'http://192.168.1.13:8082/measures/getmeasures';
+    let apiUrl = 'http://p-address:8082/measures/getmeasures';
     return await axios({
       url: apiUrl,
       method: 'GET',

@@ -31,7 +31,7 @@ const DetailsHeader = ({
   const deleteMeter = async () => {
     try {
       let result = await axios.post(
-        'http://192.168.1.13:8082/meters/delete/' + item.ID,
+        'http://ip-address:8082/meters/delete/' + item.ID,
       );
       showToast('monitor deleted');
     } catch (error) {
@@ -219,7 +219,7 @@ const Details = ({route, navigation}) => {
   let submitCoast = async () => {
     try {
       let response = await axios.post(
-        'http://192.168.1.13:8082/coasts/coast',
+        'http://ip-address:8082/coasts/coast',
         coast,
       );
     } catch (error) {
@@ -229,7 +229,7 @@ const Details = ({route, navigation}) => {
   let fetchCoasts = async () => {
     try {
       let response = await axios.get(
-        'http://192.168.1.13:8082/coasts/coast/' + item.ID,
+        'http://ip-address:8082/coasts/coast/' + item.ID,
       );
       setCoastsData(response.data);
     } catch (error) {

@@ -21,7 +21,7 @@ export const getCoastsFailure = error => ({
 export function getCoasts() {
   return async dispatch => {
     dispatch(getCoastsBegin());
-    let apiUrl = 'http://192.168.1.13:8082/coasts/';
+    let apiUrl = 'http://p-address:8082/coasts/';
     return await axios({
       url: apiUrl,
       method: 'GET',

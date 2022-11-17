@@ -21,7 +21,7 @@ export const getMetersFailure = error => ({
 export function getMeters() {
   return async dispatch => {
     dispatch(getMetersBegin());
-    let apiUrl = 'http://192.168.1.13:8082/meters/';
+    let apiUrl = 'http://ip-address:8082/meters/';
     return await axios({
       url: apiUrl,
       method: 'GET',
