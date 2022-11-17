@@ -1,7 +1,7 @@
 <h1 align="center"> Energy App </h1> <br>
 <p align="center">
   <a href="https://gitpoint.co/">
-    <img alt="GitPoint" title="GitPoint" src="./screenshots/app_logo.jpg" width="450">
+    <img alt="GitPoint" title="GitPoint" src="./screenshots/app_logo.jpg" width="250">
   </a>
 </p>
 <p align="center">
@@ -23,8 +23,8 @@ Track your electric energy consumption and estimate its costs.Built with React N
 **Available for both iOS and Android.**
 
 <p align="center">
-  <img src = "./screenshots/screenshot12" width=350>
-  <img src = "./screenshots/screenshot1" width=350>
+  <img src = "./screenshots/screenshot12.jpg" width=350>
+  <img src = "./screenshots/screenshot1.jpg" width=350>
 </p>
 
 ## Features
@@ -41,14 +41,14 @@ A few of the things you can do with GitPoint:
 - Better understanding of your energy consumptions and its costs.
 
 <p align="center">
-  <img src = "./screenshots/screenshot3" width=350>
-  <img src = "./screenshots/screenshot4" width=350>
-  <img src = "./screenshots/screenshot5" width=350>
+  <img src = "./screenshots/screenshot3.jpg" width=350>
+  <img src = "./screenshots/screenshot4.jpg" width=350>
+  <img src = "./screenshots/screenshot5.jpg" width=350>
 </p>
 <p align="center">
-  <img src = "./screenshots/screenshot6" width=350>
-  <img src = "./screenshots/screenshot7" width=350>
-  <img src = "./screenshots/screenshot8" width=350>
+  <img src = "./screenshots/screenshot6.jpg" width=350>
+  <img src = "./screenshots/screenshot7.jpg" width=350>
+  <img src = "./screenshots/screenshot8.jpg" width=350>
 </p>
 
 ## Build Process
@@ -69,6 +69,12 @@ A few of the things you can do with GitPoint:
 - Replace process.env.PORT by a port number in server/server.js at `app.listen(process.env.PORT ...)`
 - This app uses FCM (Firebase cloud messaging to send notifications ) so you need to connect app to firebase console
 - you need to add a secretKey.json to the server directory (will be used in /server/routes/sendNotif.js) to generate file please refer to this tutorial [Authorize send requests in Firebase](https://firebase.google.com/docs/cloud-messaging/auth-server#:~:text=To%20generate%20a%20private%20key,confirm%20by%20clicking%20Generate%20Key.)
-- change IP address
+- Add your IP address to your Api Url in stores/meter/meterActions, stores/measure/measureActions, stores/coast/coastActions to be able to fetch data
+- Add your IP address to axios post and get requests url in screens/Measure and screens/Details
 
 ## Used Technologies
+
+- Both react and react-redux (to manage app state and fetch data) are used for the app development
+- Express.js is used to develop our REST API
+- MongoDB is used as our database service
+- Firebase FCM is used to send notifications
