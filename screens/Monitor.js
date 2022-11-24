@@ -160,7 +160,7 @@ const Monitor = ({
         data={monitorTabs}
         contentContainerStyle={{marginTop: SIZES.padding}}
         horizontal
-        paginEnabled
+        pagingEnabled
         scrollEventThrottle={16}
         snapToAlignment="center"
         showsHorizontalScrollIndicator={false}
